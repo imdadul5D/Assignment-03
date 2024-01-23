@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind & Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'hockey-primary': '#FF4240',
+                'menu-primary' : '#424247',
+                'overlay' : 'rgba(19, 19, 24, 0.50);'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class="container mx-auto px-5 lg:px-24 font-manrope">
+      <header>
+        <!-- Navbar Part Start -->
+        <nav class="py-4 lg:py-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-normal text-base text-menu-primary">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                  <a href="#" class="font-extrabold text-4xl">Hockey<span class="text-hockey-primary">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-menu-primary font-normal text-base">
+                    <li><a href="#" class="hover:text-hockey-primary">Home</a></li>
+                    <li><a href="#" class="hover:text-hockey-primary">About</a></li>
+                    <li><a href="#" class="hover:text-hockey-primary">Pages</a></li>
+                    <li><a href="#" class="hover:text-hockey-primary">Blog</a></li>
+                    <li><a href="#" class="hover:text-hockey-primary">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" hidden lg:w-6 h-6 hover:text-hockey-primary">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                      
+                  <a class="btn bg-hockey-primary text-white font-bold text-xl px-6">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <!-- Navbar Part End -->
+
+        <!-- Banner Part Start -->
+        <section class=" pb-10 lg:pb-20">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" alt="1" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle bg-gray-800 text-white">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-gray-800 text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/1 - Copy.png" alt="1 - Copy" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle bg-gray-800 text-white">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-gray-800 text-white">❯</a>
+                  </div>
+                </div>
+            </div>
+            <div class="mt-2 p-4 space-y-2 lg:hidden w-auto bg-[#131318] rounded-xl">
+                <h1 class="font-extrabold text-lg lg:text-2xl text-white">Meet all the heroes from the field</h1>
+                <p class="text-[#fefefe] font-semibold text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+        </section>
+        <!-- Banner Part End -->
+    </header>
+
+    <main>
+        <!-- Professional Hockeys Club Part Start -->
+        <section>
+            <div class="text-center border-t-2 border-b-2 border-[rgba(19, 19, 24, 0.20)] border-dashed py-8 space-y-6">
+                <h2 class="font-extrabold text-lg lg:text-4xl">Professional Hockeys Club</h2>
+                <p class="font-semibold text-base text-gray-500">Dynamic professional hockey club showcasing skill, teamwork, and passion, pursuing victory <br> with unwavering determination and sportsmanship.</p>
+            </div>
+            <div class="grid lg:grid-cols-4 gap-4 pb-11">
+                <div class="card lg:w-96">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-hockey-primary" style="--value:87;" role="progressbar"><span class="text-black">87%</span></div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Prayer Facility</h2>
+                      <p>Quiet sanctuaries for peaceful prayer moments.</p>
+                    </div>
+                </div>
+                
+                <div class="card lg:w-96">
+                    <figure class="px-10 lg:pt-10">
+                        <div class="radial-progress text-green-500" style="--value:95;" role="progressbar"><span class="text-black">95%</span></div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Experienced Coach</h2>
+                      <p>Expert guide shaping success journeys.</p>
+                    </div>
+                </div>
+
+                <div class="card lg:w-96">
+                    <figure class="px-10 lg:pt-10">
+                        <div class="radial-progress text-orange-400" style="--value:90;" role="progressbar"><span class="text-black">90%</span></div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Senior Player</h2>
+                      <p>Experienced, wise, resilient, cherished, <br> seasoned, accomplished.</p>
+                    </div>
+                </div>
+
+                <div class="card lg:w-96">
+                    <figure class="px-10 lg:pt-10">
+                        <div class="radial-progress text-sky-700" style="--value:80;" role="progressbar"><span class="text-black">80%</span></div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Training Ground</h2>
+                      <p>Dynamic Training Ground: Elite <br> skills forged here.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Professional Hockeys Club Part End -->
+
+        <!-- Program Section Part Start -->
+        <section class="pb-10 lg:pb-20">
+            <div class="text-center border-t-2 border-b-2 border-[rgba(19, 19, 24, 0.20)] border-dashed py-8 space-y-6">
+                <h2 class="font-extrabold text-lg lg:text-4xl">Program Sections</h2>
+                <p class="font-semibold text-base text-gray-500">Diverse modules harmonize for seamless functionality, enhancing efficiency <br> and optimizing performance effortlessly.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center gap-6 mt-10">
+              <img src="Images/2.png" alt="2">
+              <img src="Images/3.png" alt="">
+            </div>
+            <div class="flex justify-center mt-6">
+              <img src="Images/4.png" alt="">
+            </div>
+
+        </section>
+        <!-- Program Section Part End -->
+
+        <!-- Our New Product Part Start -->
+        <section class="pb-20">
+          <div class="text-center border-t-2 border-b-2 border-[rgba(19, 19, 24, 0.20)] border-dashed py-8 space-y-6">
+            <h2 class="font-extrabold text-lg lg:text-4xl">Our New Products</h2>
+            <p class="font-semibold text-base text-gray-500">Discover innovation with our new products—blend style and functionality seamlessly for an unparalleled <br> experience. Elevate your lifestyle today!</p>
+          </div>
+
+        <div class="grid mt-4 lg:grid-cols-2 gap-6 lg:mt-8">
+          <div class="flex flex-col lg:flex-row card card-side bg-base-100 border p-4">
+            <figure><img src="Images/5.png" alt="5"/></figure>
+            <div class="card-body">
+              <div class="flex gap-3 font-semibold text-base text-gray-400">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> <p>5.0</p>
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  </svg><p>20</p>                
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg> <p>200</p>                  
+                </div>
+              </div>
+              <h2 class="card-title">Jercy Jacket</h2>
+              <p class="font-semibold text-base text-gray-600">Sleek, modern, and cozy, perfect <br> for any occasion.</p>
+              <div class="card-actions justify-between">
+                <h3 class="font-extrabold text-lg text-hockey-primary">Price - $22.00</h3>
+                <p class="flex font-semibold text-base text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg> Dalivary Fee : Free</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row card card-side bg-base-100 border p-4">
+            <figure><img src="Images/6.png" alt="6"/></figure>
+            <div class="card-body">
+              <div class="flex gap-3 font-semibold text-base text-gray-400">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> <p>5.0</p>
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  </svg><p>20</p>                
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg> <p>200</p>                  
+                </div>
+              </div>
+              <h2 class="card-title">Football</h2>
+              <p class="font-semibold text-base text-gray-600">Passion, teamwork, goals; football <br> unites hearts.</p>
+              <div class="card-actions justify-between">
+                <h3 class="font-extrabold text-lg text-hockey-primary">Price - $22.00</h3>
+                <p class="flex font-semibold text-base text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg> Dalivary Fee : Free</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row card card-side bg-base-100 border p-4">
+            <figure><img src="Images/7.png" alt="7"/></figure>
+            <div class="card-body">
+              <div class="flex gap-3 font-semibold text-base text-gray-400">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> <p>5.0</p>
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  </svg><p>20</p>                
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg> <p>200</p>                  
+                </div>
+              </div>
+              <h2 class="card-title">Cap</h2>
+              <p class="font-semibold text-base text-gray-600">Stylish yellow cap with embroidered <br> logo.</p>
+              <div class="card-actions justify-between">
+                <h3 class="font-extrabold text-lg text-hockey-primary">Price - $22.00</h3>
+                <p class="flex font-semibold text-base text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg> Dalivary Fee : Free</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row card card-side bg-base-100 border p-4">
+            <figure><img src="Images/8.png" alt="8"/></figure>
+            <div class="card-body">
+              <div class="flex gap-3 font-semibold text-base text-gray-400">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> <p>5.0</p>
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  </svg><p>20</p>                
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg> <p>200</p>                  
+                </div>
+              </div>
+              <h2 class="card-title">Jercy</h2>
+              <p class="font-semibold text-base text-gray-600">Serene shores, lush landscapes, captivating <br> coastal charm</p>
+              <div class="card-actions justify-between">
+                <h3 class="font-extrabold text-lg text-hockey-primary">Price - $22.00</h3>
+                <p class="flex font-semibold text-base text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg> Dalivary Fee : Free</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row card card-side bg-base-100 border p-4">
+            <figure><img src="Images/9.png" alt="9"/></figure>
+            <div class="card-body">
+              <div class="flex gap-3 font-semibold text-base text-gray-400">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> <p>5.0</p>
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  </svg><p>20</p>                
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg> <p>200</p>                  
+                </div>
+              </div>
+              <h2 class="card-title">Safety Helmet</h2>
+              <p class="font-semibold text-base text-gray-600"> Essential head protection for batsmen <br> in the game</p>
+              <div class="card-actions justify-between">
+                <h3 class="font-extrabold text-lg text-hockey-primary">Price - $22.00</h3>
+                <p class="flex font-semibold text-base text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg> Dalivary Fee : Free</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row card card-side bg-base-100 border p-4">
+            <figure><img src="Images/10.png" alt="10"/></figure>
+            <div class="card-body">
+              <div class="flex gap-3 font-semibold text-base text-gray-400">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> <p>5.0</p>
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  </svg><p>20</p>                
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg> <p>200</p>                  
+                </div>
+              </div>
+              <h2 class="card-title">White And Black Football</h2>
+              <p class="font-semibold text-base text-gray-600">Dynamic clash of white and black on the <br> football field,  fierce competition in motion</p>
+              <div class="card-actions justify-between">
+                <h3 class="font-extrabold text-lg text-hockey-primary">Price - $22.00</h3>
+                <p class="flex font-semibold text-base text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg> Dalivary Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <!-- Our New Product Part End -->
+
+
+        <!-- Clients Question Part Start -->
+        <section class="pb-20">
+          <div class="text-center border-t-2 border-b-2 border-[rgba(19, 19, 24, 0.20)] border-dashed py-8 space-y-6">
+            <h2 class="font-extrabold text-lg lg:text-4xl">Clients Question</h2>
+            <p class="font-semibold text-base text-gray-500">Seeking concise guidance on problem-solving, prioritizing efficiency, and fostering innovation <br> in a dynamic business environment.</p>
+          </div>
+
+          <div class="flex flex-col lg:flex-row border rounded-2xl p-6  gap-10 mt-10">
+            <img src="Images/11.png" alt="" class="">
+
+            <div class=" flex-1">
+              <div class="collapse collapse-plus border-b">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Our Equipment
+                </div>
+                <div class="collapse-content"> 
+                  <p>Our cutting-edge equipment blends precision and efficiency, delivering optimal performance for seamless operations and unparalleled results.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus border-b ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Hockey Trainingers
+                </div>
+                <div class="collapse-content"> 
+                  <p>Hockey Trainingers: Elite coaching for peak performance. Precision drills, expert guidance, and passion fueling every stride toward excellence.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus border-b">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Private Lessons
+                </div>
+                <div class="collapse-content"> 
+                  <p>Unlock your potential with personalized Private Lessons. Expert guidance tailored to your needs, fostering skill development and achieving success. Elevate your learning experience today.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus border-b">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Booking
+                </div>
+                <div class="collapse-content"> 
+                  <p>Effortlessly book your ideal experience with Booking, where convenience meets endless possibilities for unforgettable moments.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus border-b">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Ski Touring
+                </div>
+                <div class="collapse-content"> 
+                  <p>Glide through serene snowscapes, ascend peaks, and savor the thrill of untracked slopes.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus border-b">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Pricings
+                </div>
+                <div class="collapse-content"> 
+                  <p>Our pricing is transparent, competitive, and tailored to your needs, ensuring value for every budget. No hidden fees, just straightforward affordability.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Clients Question Part End -->
+        
+        <!-- Get In Touch Part Start -->
+        <section class="pb-20">
+          <div class="text-center border-t-2 border-b-2 border-[rgba(19, 19, 24, 0.20)] border-dashed py-8 space-y-6">
+            <h2 class="font-extrabold text-lg lg:text-4xl">Get In Touch</h2>
+            <p class="font-semibold text-base text-gray-500">Connect effortlessly, communicate seamlessly. Get in touch for a world of possibilities <br> and meaningful interactions.</p>
+          </div>
+
+          <div class="flex flex-col lg:flex-row mt-10">
+            <div class="border p-8 lg:sw-1/3 rounded-2xl flex flex-col gap-6">
+              <div class="p-4 bg-green-50 rounded-2xl space-y-8">
+                <img src="Images/Group 1171275317.png" alt="Group 1171275317.png">
+                <div>
+                  <p class="text-base font-medium text-gray-400">Phone Number :</p>
+                  <h3 class="text-lg text-gray-800 font-extrabold">(+62) 123-321-543</h3>
+                </div>
+              </div>
+
+              <div class="p-4 bg-yellow-50 rounded-2xl space-y-8">
+                <img src="Images/Group 1171275318.png" alt="Group 1171275317.png">
+                <div>
+                  <p class="text-base font-medium text-gray-400">Email :</p>
+                  <h3 class="text-lg text-gray-800 font-extrabold">hockeys@support.com</h3>
+                </div>
+              </div>
+
+              <div class="p-4 bg-blue-100 rounded-2xl space-y-8">
+                <img src="Images/Group 1171275321.png" alt="Group 1171275317.png">
+                <div>
+                  <p class="text-base font-medium text-gray-400">Location :</p>
+                  <h3 class="text-lg text-gray-800 font-extrabold">152/1 Mohakhali Wireless Gate</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:w-3/4 p-6">
+              <div class="flex flex-col lg:flex-row gap-3 py-6">
+                
+                <div class="lg:w-1/2 space-y-4">
+                  <label class="text-xl font-bold">Your Name</label>
+                  <input type="text" placeholder="Enter Your Full Name" class="input input-bordered w-full bg-slate-50 py-8 pl-6 border-0"/>
+                </div>
+
+                <div class="lg:w-1/2 space-y-4">
+                  <label class="text-xl font-bold">Your Email</label>
+                  <input type="email" placeholder="Enter Your Email" class="input input-bordered w-full bg-slate-50 py-8 pl-6 border-0"/>
+                </div>
+
+              </div>
+
+              <div class="flex flex-col lg:flex-row gap-3 py-6">
+                
+                <div class="lg:w-1/2 space-y-3">
+                  <label class="text-xl font-bold">Subject</label>
+                  <input type="text" placeholder="Enter Your Subject" class="input input-bordered w-full bg-slate-50 py-8 pl-6 border-0"/>
+                </div>
+
+                <div class="lg:w-1/2 space-y-4">
+                  <label class="text-xl font-bold">Phone Number</label>
+                  <input type="number" placeholder="Enter Your Email" class="input input-bordered w-full bg-slate-50 py-8 pl-6 border-0"/>
+                </div>
+
+              </div>
+
+              <div class="pb-5">                
+                <div class="w-full space-y-4">
+                  <label class="text-xl font-bold">Message</label>
+                  <textarea class="textarea textarea-bordered w-full h-28 bg-slate-50 border-0" placeholder="Write your message"></textarea>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button class="bg-hockey-primary text-white w-full py-4 rounded-xl">Send Message</button>
+              </div>
+            </div>
+            
+          </div>
+          <div class="text-center bg-slate-50 rounded-xl space-y-6 py-9 mt-8">
+            <h2 class="text-2xl font-extrabold text-[#131318]">Social Media</h2>
+            <div class="flex justify-center gap-4 text-xl">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </section>
+        <!-- Get In Touch Part End -->
+    </main>
+    </div>
+      
+    <!-- Footer Part Start -->
+    <footer class="footer p-10 bg-[#131318] text-base-content">
+      <div class="container mx-auto space-y-4 lg:px-24 flex flex-col lg:flex-row justify-between ">
+        <aside class="flex flex-col items-center lg:text-left text-center lg:items-start space-y-3 w-full lg:w-1/4">
+          <h3 class="font-extrabold text-[28px] text-white">Get In Touch</h3>
+          <p class="font-semibold text-base text-gray-500">Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin.</p>
+          <div class="flex items-center">
+            <i class="fa-solid fa-phone text-hockey-primary"></i>
+            <h4 class="font-semibold text-base text-gray-500 pl-1"> (+62) 123-321-543</h4>
+          </div>
+          <div class="flex items-center">
+            <i class="fa-solid fa-envelope text-hockey-primary"></i>
+            <h4 class="font-semibold text-base text-gray-500 pl-1">hockeys@support.com</h4>
+          </div>
+        </aside>
+
+        <div class="flex flex-row justify-center w-full  lg:justify-center lg:w-2/4">
+          <nav class="flex flex-col text-center lg:text-left items-center lg:items-center w-1/2">
+            <header class="footer-title pb-4 text-white">Copany</header> 
+            <div class=" flex flex-col space-y-3 text-gray-500">
+              <a class="link link-hover">About Us</a>
+              <a class="link link-hover">Leadership</a>
+              <a class="link link-hover">Careers</a>
+              <a class="link link-hover">News & Article</a>
+              <a class="link link-hover">Legal Nitice</a>
+            </div>
+          </nav> 
+          <nav class="flex items-center lg:items-center text-center lg:text-left flex-col w-1/2">
+            <header class="footer-title pb-4 text-white">Support</header> 
+            <div class=" flex flex-col space-y-3 text-gray-500">
+              <a class="link link-hover">Help Center</a>
+              <a class="link link-hover">FAQ</a>
+              <a class="link link-hover">Ticket Support</a>
+              <a class="link link-hover">Contact Us</a>
+            </div>
+          </nav> 
+        </div>
+        <nav class="flex flex-col items-center lg:items-center text-center lg:text-left w-full lg:w-1/4">
+          <header class="footer-title pb-4 text-white">Service</header> 
+          <div class=" flex flex-col space-y-3 text-gray-500">
+            <a class="link link-hover">Academy</a>
+            <a class="link link-hover">Group Lesson</a>
+            <a class="link link-hover">Private Lesson</a>
+            <a class="link link-hover">Hockey's for kids</a>
+            <a class="link link-hover">Hockey's for Adult</a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+    <!-- Footer Part End -->
+
+</body>
+</html>
